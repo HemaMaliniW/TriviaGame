@@ -1,0 +1,41 @@
+* You'll create a trivia form with multiple choice or true/false options (your choice).
+
+* The player will have a limited amount of time to finish the quiz. 
+
+* The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.
+
+* Don't let the player pick more than one answer per question.
+
+* Don't forget to include a countdown timer.
+
+
+
+The largest freshwater lake in the world is Lake Superior.
+True or False
+
+The Sea of Tranquility is on the Moon.
+True or False
+
+Someone who shoes horses called a farrier. 
+True or False
+
+The item of clothing was named after its Scottish inventor is a Mackintosh.
+True or False
+
+A falchion is a sword. 
+True or False
+
+The diameter of Earth is 8,000 miles.
+True or False
+
+Another word for lexicon is dictionary. 
+True or False
+
+The seventh planet from the sun is Uranus.
+True or False
+
+Louis Pasteur invented the rabies vaccination.
+True or False
+
+The meaning of the term 'piano' is "to be played softly". 
+True or False
