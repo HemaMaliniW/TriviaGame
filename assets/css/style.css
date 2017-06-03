@@ -1,2 +1,13 @@
 
 <link rel="stylesheet" type="text/css" href="assets/Style/.css">
+     <script src="assets/CSS/style.css"></script>
+
+.jumbotron {
+  box-sizing: border-box;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0);
+}
+body {
+  background-color: #DD0506;
+  color: white;
+}

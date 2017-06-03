@@ -8,7 +8,7 @@
 
 * Don't forget to include a countdown timer.
 
-
+		In this assignment, You'll create a Trivia game using JavaScript for the logic and jQuery to manipulate HTML. Be sure to layout this app with valid HTML and stylish CSS.In this assignment, You'll create a Trivia game using JavaScript for the logic and jQuery to manipulate HTML. Be sure to layout this app with valid HTML and stylish CSS.
 
 The largest freshwater lake in the world is Lake Superior.
 True or False
