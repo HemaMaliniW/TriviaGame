@@ -1,43 +1,52 @@
-// TriviaGame
-	 // Use a FOR loop function 
 
-	 // Use Append 
-	 // Use Jquery 
 
-	// Set a counter
+	$("button").on("click",function(){
+  	// alert("Heloo");
+  	console.log(this);
+  	console.log(this.getAttribute('value'))
+	});
+
+
+	// trueButton1 needs to be counted as 1 point
+
+	// if truButton2 is clicked then 0 point
+
+	// function myFunction(){
+	// 	var trueButton1 = button;
+	// 	if (trueButton1 == true){
+	// 		score++;
+	// 		} else{
+	// 		score--;
+	// 	}
+	 
+
+	// 	// Set a counter
     var number = 100;
     var score = 0;
     //  Variable that will hold our interval ID when we execute
     //  the "run" function
     var intervalId;
 
-    //  When the stop button gets clicked, run the stop function.
-    $("#stop").on("click", stop);
-
-    //  When the resume button gets clicked, execute the run function.
-    $("#resume").on("click", run);
-    $("#trueButton1").on("click", function(){
-      answerQuestion(true);
-    $("#falseButton1").on("click", function(){
-      answerQuestion(false);
-    })
-    })
     //  The run function sets an interval
     //  that runs the decrement function once a second.
     function run() {
       intervalId = setInterval(decrement, 1000);
     }
-      function answerQuestion(value){
-        console.log("hi")
-        if (value == true){
-          score++;
-        }
-       $("#score").html("<h2>" + score + "</h2>");
+
+    function updateScore(value){
+    if (value == correct){
+    score++;
+        
+     // else (value == incorrect){
+     // 	score--;
+
+     	$("#score").html("<h2>" + score + "</h2>");
+      // console.log(score)
+      }
 
       }
-      
-    //  The decrement function.
-    function decrement() {
+    	//  The decrement function.
+    	function decrement() {
 
       //  Decrease number by one.
       number--;
@@ -54,18 +63,18 @@
 
         //  Alert the user that time is up.
         alert("Time Up!");
-      }
-    }
+      	}
+    	}
 
-    //  The stop function
-    function stop() {
+    	//  The stop function
+   		 function stop() {
 
       //  Clears our intervalId
       //  We just pass the name of the interval
       //  to the clearInterval function.
       clearInterval(intervalId);
-    }
+    	}
 
-    //  Execute the run function.
-    run();
+    	//  Execute the run function.
+    	run();
 
