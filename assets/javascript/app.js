@@ -1,9 +1,23 @@
 
 
 	$("button").on("click",function(){
+    //get the value of my CUSTOM clicked attribute
+    var clicked = $(this).attr("data-clicked");
+
+    //if the button has not been clicked
+    if(clicked == "false"){
+        //add a scored based on the value 
+        var value = $(this).val();
+        var questionNumber = $(this).attr("data-questionNumber");
+
+        updateScore(value, questionNumber);
+        
+        $(this).attr("data-clicked", "true");
+    }
   	// alert("Heloo");
   	console.log(this);
   	console.log(this.getAttribute('value'))
+    console.log("Score: " + score);
 	});
 
 
@@ -22,7 +36,7 @@
 
 	// 	// Set a counter
     var number = 100;
-    var score = 0;
+    var score = 8;
     //  Variable that will hold our interval ID when we execute
     //  the "run" function
     var intervalId;
@@ -33,18 +47,36 @@
       intervalId = setInterval(decrement, 1000);
     }
 
-    function updateScore(value){
-    if (value == correct){
-    score++;
-        
-     // else (value == incorrect){
-     // 	score--;
+    function updateScore(value, questionNumber
+      ){
+      //get the value of my CUSTOM attribute
+
+        if(value == "correct"){
+          if(score < 8){
+            score++;
+          }
+
+          //turn my false button data-clicked attribute to false
+          $("#falseButton" + questionNumber).attr("data-clicked", "false");
+        }
+        else{
+          score--;
+
+          //turn my true button data-clicked attribute to false
+          $("#trueButton" + questionNumber).attr("data-clicked", "false");
+        }
 
      	$("#score").html("<h2>" + score + "</h2>");
       // console.log(score)
       }
 
+      if ("#score"<8).html("Your Won"+ Playah) {
+
+      } else {
+        score>0; ("You Lost!");
+
       }
+      
     	//  The decrement function.
     	function decrement() {
 
